@@ -1,0 +1,22 @@
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--accent:#1c1917}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#f5f5f4;--muted:#a8a29e;--line:#292524;--accent:#f5f5f4}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:0 24px}
+header{padding:40px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700;letter-spacing:-.02em;color:var(--fg);text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark{width:28px;height:28px;border-radius:7px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-size:12px;font-weight:800}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:var(--fg)}
+main{padding:72px 0 96px}
+h1{font-size:clamp(36px,7vw,52px);line-height:1.08;letter-spacing:-.035em;font-weight:700}
+.lead{color:var(--muted);font-size:19px;margin-top:20px;max-width:30em}
+section{margin-top:72px;padding-top:32px;border-top:1px solid var(--line)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;margin-bottom:14px}
+h3{font-size:17px;margin:28px 0 6px}
+p+p{margin-top:12px}
+a{color:var(--fg)}
+.doc p,.doc li{color:var(--fg)}
+.doc ul{padding-left:20px;margin-top:8px}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--muted)}
